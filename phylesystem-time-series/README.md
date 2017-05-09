@@ -19,3 +19,8 @@ plot found in this directory.
       different table structure for the output in these scripts.
   2.  This script is slow because it checks out every commit. Could be a lot
       zippier if it used lower level git operations.
+  3. rather than make it faster, it probably just needs to process since 
+    a start point. Note that `./trace-num-studies-and-trees.bash` can
+    take an argument for the SHA to treat as the beginning of the operation.
+    By concatenating the data from that run onto the current data, we should
+    be able to update frequently.
