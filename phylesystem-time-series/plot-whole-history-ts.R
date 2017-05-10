@@ -3,7 +3,7 @@ print(d);
 dt = as.POSIXct(d$timestamp, origin="1970-01-01");
 print(dt);
 
-pdf("ot-phylesystem-time-series.pdf");
+pdf("ot-whole-time-series.pdf");
 plot(dt, d$numtrees,
      xlab="Date", ylab="num trees",
      ylim=c(0, max(d$numtrees)),
